@@ -1,0 +1,143 @@
+:root {
+  --color: #EEEEEE;
+  background-color: #1E1E1E;
+}
+
+body {
+  background: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+.intro {
+  display: block;
+  height: 90vh;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  color: var(--color);
+  font-size: 12px;
+  display: block;
+  text-align: left;
+  padding: 20px 40px 14px 20px;
+  text-transform: uppercase;
+}
+
+
+.intro-text {
+  font-family: "Roboto", sans-serif;
+  padding: 100px 0px 0px 160px;
+  color: var(--color);
+}
+
+.main-text {
+  color: var(--color);
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0px;
+  margin: 0px;
+}
+
+.main-text p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.about p {
+  font-size: 20px;
+}
+
+
+.gallery {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  text-align: center;
+  color: var(--color);
+}
+
+/* Grid container for projects */
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.project-box {
+  position: relative;
+  background-color: #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.project-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Gradient overlay using ::after */
+.project-box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: 8px;
+  background: linear-gradient(
+    to bottom left,
+    rgba(255, 255, 255, 0.6) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.project-box:hover::after {
+  opacity: 1;
+}
+
+
+/* Label top-left */
+.project-box .label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  text-align: left;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.project-box .label h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.project-box .label p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  font-weight: 300;
+}
