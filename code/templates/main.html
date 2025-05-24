@@ -12,40 +12,69 @@
         <header>
             <nav>
             <ul>
-                <li><a>William Bowley<br>Inventor</a></li>
-                <li><a>New Article<br>Open Source Brushless Linear Motor</a></li> 
-                <li style="float:right"><a>Freelance Developer<br>From 20 November 2025</a></li>
+                <li>
+                    <a><b>William</b>
+                        <br>
+                        <span class="under-text-color">Bowley</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <b>New Project</b>
+                        <br>
+                        <span class="under-text-color">Open Source Brushless Linear Motor</span>
+                    </a>
+                </li> 
+                <li style="float:right">
+                    <a>
+                        <b>Freelance Developer</b>
+                        <br>
+                        <span class="under-text-color">From 20 November 2025</span>
+                    </a>
+                </li>
             </ul>
             </nav>
         </header>
 
         <section class="intro">
-            <div class="intro-text">
-            <div class="main-text">
-                <p style="font-size: 38px">Hardware</p>
-                <p style="font-size: 45px">Developer.</p>
-            </div>
-            <div class="about">
-                <p>
-                I am an <b>Australian student</b> and <b>inventor</b>
-                <br>
-                passionate about building innovative hardware projects
-                <br>
-                including <b>linear motors</b> and <b> a electromagnetic coil-gun</b>
-                </p>
-            </div>
+            <div class="content-wrapper">
+                <div class="intro-text">
+                    <div class="main-text">
+                        <p style="font-size: 38px"><span class="under-text-color">Student.</span></p>
+                        <p style="font-size: 45px">Inventor.</p>
+                    </div>
+                    <div class="about">
+                        <p>
+                            I am an <b>Australian student</b> and <b>inventor</b><br>
+                            passionate about creating innovative hardware<br>
+                            including <b>linear motors</b> and <b>LiPo chargers</b>,<br>
+                            with a focus on <b>programming</b> and <b>optimization</b>.
+                        </p>
+                    </div>
+
+                    <nav class="small-nav">
+                        <ul>
+                            <li><a href="/about">About</a></li>
+                            <li><a href="#gallery">Projects</a></li>
+                            <li><a href="#articles">Articles</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </section>
 
-        <section class="gallery">
+        <section class="gallery" id="gallery">
         <div class="scroll-down-arrow" id="scrollArrow"></div>
-        <h1 style="font-weight: 600; font-size: 38px; color: #EEEEEE;">PROJECTS</h1>
-        <div class="project-gallery">
+        <div class="content-wrapper">
+            <div class="section-title">
+                <h1>Projects</h1>
+            </div>
+            <div class="project-gallery">
             <div class="project-box">
             <a href="linear-motor.html">
                 <div class="label">
                 <p>Open source linear motor</p>
-                <h2>Project Blue Shark | Linear Motor V1</h2>
+                <h2>Project Blue Shark | Linear Motor V0</h2>
                 </div>
                 <img src="static/images/linear_motor.png" alt="Linear Brushless Motor">
             </a>
@@ -53,7 +82,7 @@
             <div class="project-box">
                 <a href="Motor-Builder.html">
                 <div class="label">
-                <p>Linear Motor Builder And Optimizer</p>
+                <p>Linear Motor Designer And Optimizer</p>
                 <h2 >Project Blue Shark | Optimization Tool </h2>
                 </div>
                 <img src="static\images\optimization.png" alt="Electromagnetic Coilgun">
@@ -69,8 +98,27 @@
                 </a>
             <div class="project-box">
             </div>
+            </div>
         </div>
         </section>
+
+        <section class="articles" id="articles">
+            <div class="content-wrapper">
+                <div class="section-title">
+                    <h1>Articles</h1>
+                </div>
+
+                <div class="article" data-href="/the-author-and-his-death.html">
+                <h2 class="article-title">The Authors Death: Who Tells Your Story When You’re Gone?</h2>
+                <p class="article-description">
+                    We spend our lives writing our own story—line by line, choice by choice. 
+                    But in death, the pen passes to others, and suddenly, the story is no longer ours to tell.
+                </p>
+                <p class="article-date">September 20th, 2025</p>
+                </div>
+            </div>
+        </section>
+
         <script src="/static/javascript.js"></script>
     </body>
 </html>
