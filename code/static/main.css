@@ -43,7 +43,7 @@ body {
   height: 100vh;
 }
 
-nav ul {
+header nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -51,15 +51,15 @@ nav ul {
   font-family: "Roboto", sans-serif;
 }
 
-nav li {
+header nav li {
   float: left;
 }
 
 .under-text-color {
-    color: var(--sub-color)
+  color: var(--sub-color)
 }
 
-nav li a {
+header nav li a {
   color: var(--color);
   font-size: 12px;
   display: block;
@@ -98,7 +98,7 @@ nav li a {
 }
 
 .about b {
-  color: var(--sub-color);
+  color: var(--color);
 }
 
 .about p {
@@ -106,7 +106,20 @@ nav li a {
 }
 
 
+.small-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+.small-nav li {
+  float: left;
+}
+
 .small-nav a {
+  text-transform: uppercase;
   text-decoration: none;
   padding: 0px 10px 0px 0px;
   color: var(--small-nav-bar);
@@ -118,7 +131,9 @@ nav li a {
   color: var(--color); 
 }
 
-
+.small-nav li {
+  float: left;
+}
 .gallery {
   font-family: "Roboto", sans-serif;
   display: flex;
@@ -287,6 +302,9 @@ nav li a {
   font-weight: 300;
 }
 
+.articles {
+  margin-top: 100px;
+}
 .article {
   position: relative;
   background: #262626;
@@ -357,4 +375,62 @@ nav li a {
     color: var(--sub-color);
     font-size: 0.9em;
 }
+
+.footer {
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  font-size: 12px;
+}
+
+footer nav ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+
+}
+
+footer nav li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color);
+  padding: 20px 40px 14px 20px;
+}
+
+.footer-left nav li {
+    float: left;
+}
+
+.footer-nav a {
+  color: var(--small-nav-bar);
+  transition: color 0.25s ease-in-out;
+}
+
+.footer-nav a:hover {
+  color: var(--color);
+}
+
+.footer-nav {
+  margin-left:10px;
+}
+
+.footer-nav li a {
+   padding: 0px;  
+   padding-left: 10px;
+   padding-right:10px;
+}
+
+.footer-right nav li {
+   float: left;
+}
+
+.footer-right nav a {
+  float: left;
+}
+
 
