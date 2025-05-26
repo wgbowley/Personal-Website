@@ -1,0 +1,199 @@
+:root {
+  --color: #EEEEEE;
+  --sub-color: #949494;
+  --gallery-sub-color: #CACACA;
+  --small-nav-bar: #AEAEAE;
+  --article-background: #4A4A4A;
+  background-color: #1E1E1E;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar for WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 12px; /* adjust width */
+}
+
+::-webkit-scrollbar-track {
+  background: #1E1E1E; /* same as background */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color); /* your light color */
+  border-radius: 6px;
+  border: 3px solid #1E1E1E; /* adds space around thumb matching background */
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color) #1E1E1E;
+}
+
+body {
+  background: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+.intro {
+  display: block;
+  height: 100vh;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+header nav li {
+  float: left;
+}
+
+.under-text-color {
+  color: var(--sub-color)
+}
+
+header nav li a {
+  text-decoration: none;
+  color: var(--color);
+  font-size: 12px;
+  display: block;
+  text-align: left;
+  padding: 20px 40px 14px 20px;
+  text-transform: uppercase;
+  transition: color 0.25s ease-in-out; 
+}
+
+#home:hover {
+  color: var(--sub-color);
+}
+
+#home:hover .under-text-color {
+  color: var(--color); 
+}
+
+.content-wrapper {
+  font-family: "Roboto", sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.intro-text {
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  color: var(--color);
+  gap: 40px; /* space between flex items */
+  position: relative; /* for overlap control */
+}
+
+.intro-text {
+  position: relative;
+  height: 500px; /* or adjust as needed */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.intro-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  /* border-radius: 8px; */
+}
+
+.image-stack {
+  position: relative;
+  max-width: 40%; /* or whatever width you want */
+  margin-top: 10%;
+}
+
+.image-stack .intro-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.image-stack .overlay {
+  position: absolute;
+  top: 20px;       /* adjust to control overlap */
+  left: 20px;
+  opacity: 0.85;    /* optional for visual blending */
+  z-index: 2;
+  width: 90%;      /* adjust sizing if needed */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  transform: translateY(-50%);
+  max-width: 50%; 
+  background-color: rgba(74, 74, 74, 0.7);
+  padding: 20px 30px;
+  color: var(--color);
+  /* border-radius: 8px; */
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  font-family: "Roboto", sans-serif;
+  z-index: 10;
+}
+
+.main-text {
+  color: var(--color);
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0px;
+  margin: 0px;
+}
+
+.main-text p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.about b {
+  color: var(--color);
+}
+
+.about p {
+  font-size: 20px;
+}
+
+.small-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+.small-nav li {
+  float: left;
+}
+
+.small-nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0px 10px 0px 0px;
+  color: #1E1E1E;
+  font-size: 15px;
+  transition: color 0.25s ease-in-out; 
+}
+
+.small-nav a:hover {
+  color: var(--color); 
+}
+
+.small-nav li {
+  float: left;
+}   
