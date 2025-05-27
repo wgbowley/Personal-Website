@@ -97,7 +97,7 @@ header nav li a {
 
 .intro-text {
   position: relative;
-  height: 500px; /* or adjust as needed */
+  height: 400px; /* or adjust as needed */
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -112,16 +112,14 @@ header nav li a {
 
 .image-stack {
   position: relative;
-  max-width: 40%; /* or whatever width you want */
-  margin-top: 10%;
+  max-width: 35% /* or whatever width you want */
 }
 
 .image-stack .intro-image {
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   display: block;
-  box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
 .image-stack .overlay {
@@ -130,20 +128,21 @@ header nav li a {
   left: 20px;
   opacity: 0.85;    /* optional for visual blending */
   z-index: 2;
-  width: 90%;      /* adjust sizing if needed */
+  width: 70%;      /* adjust sizing if needed */
 }
 
 .text-overlay {
   position: absolute;
-  top: 35%;
+  top: 60%;
   left: 0;
   transform: translateY(-50%);
   max-width: 50%; 
-  background-color: rgba(74, 74, 74, 0.7);
+  /* background-color: rgba(74, 74, 74, 0.7); */
   padding: 20px 30px;
+  padding-left: 0px;
   color: var(--color);
   /* border-radius: 8px; */
-  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  /* box-shadow: 0 0 15px rgba(0,0,0,0.5); */
   font-family: "Roboto", sans-serif;
   z-index: 10;
 }
